@@ -96,7 +96,7 @@ public class EMS_TransactionUtlity {
             } else if(!ECCMap.containsKey(eccKey)){
                 ECCMap.put(eccKey, 'create');
                 System.debug('eccMap'+ECCMap);
-                System.debug('eccMap-----'+ECCMap2);
+                System.debug('eccMap'+ECCMap2);
             }
         }
         for(Entitlement_Contacts_Custom__c ecc : ECCToCopy){
