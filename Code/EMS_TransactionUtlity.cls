@@ -96,7 +96,12 @@ public class EMS_TransactionUtlity {
             } else if(!ECCMap.containsKey(eccKey)){
                 ECCMap.put(eccKey, 'create');
                 System.debug('eccMap'+ECCMap);
+<<<<<<< HEAD
                 System.debug('eccMap'+ECCMap2);
+=======
+                System.debug('eccMap-----'+ECCMap2);
+                 System.debug('eccMap-----'+ECCMap23;
+>>>>>>> bae0fa2616eb79b6c92ff65c132b0c0d1f527055
             }
         }
         for(Entitlement_Contacts_Custom__c ecc : ECCToCopy){
@@ -265,7 +270,7 @@ public class EMS_TransactionUtlity {
         } catch (DMLException e){
             ADSK_MergeContractsRestService.errorObject = Schema.sObjectType.Entitlement_Contacts_Custom__c.getLabel();
             eccLog = '\r\n' + System.now() + ' Exception occurred while end dating ECC record(s): ' + e.getMessage();
-            System.debug('The following exception has occurred: ' + e.getMessage());
+            System.debug('The following exception has occurred: '+ e.getMessage());
         }
         return eccLog;
     }
