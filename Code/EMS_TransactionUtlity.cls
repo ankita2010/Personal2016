@@ -270,7 +270,7 @@ public class EMS_TransactionUtlity {
         } catch (DMLException e){
             ADSK_MergeContractsRestService.errorObject = Schema.sObjectType.Entitlement_Contacts_Custom__c.getLabel();
             eccLog = '\r\n' + System.now() + ' Exception occurred while end dating ECC record(s): ' + e.getMessage();
-            System.debug('The following exception has occurred: '+ e.getMessage());
+            System.debug('This exception has occurred: '+ e.getMessage());
         }
         return eccLog;
     }
